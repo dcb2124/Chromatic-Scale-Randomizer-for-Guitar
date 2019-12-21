@@ -8,6 +8,7 @@ string = strings.split()
 sharps = chromaticSharp.split()
 flats = chromaticFlat.split()
 
+
 print("sharps and flats separate")
 for x in range(6):
   random.shuffle(sharps)
@@ -16,7 +17,7 @@ for x in range(6):
   print(string[x] + " string flats:  " + str(flats))
 
 print("")
-print("random choice of sharps and flats")
+print("random choice of sharp or flat")
 
 
 notes = [
