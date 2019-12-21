@@ -2,7 +2,7 @@ import random
 
 chromaticSharp = "C C♯ D D♯ E F F♯ G G♯ A A♯ B"
 chromaticFlat = "C D♭ D E♭ E F G♭ G A♭ A B♭ B"
-strings = "E A D G B e"
+strings = "e B G D A E"
 
 string = strings.split()
 sharps = chromaticSharp.split()
@@ -15,6 +15,7 @@ for x in range(6):
   random.shuffle(flats)
   print(string[x] + " string sharps: " + str(sharps))
   print(string[x] + " string flats:  " + str(flats))
+  print("")
 
 print("")
 print("random choice of sharp or flat")
@@ -41,3 +42,4 @@ for x in range(6):
   for y in range(len(notes)):
     melody.append(random.choice(notes[y]))
   print(string[x] + " string: " + str(melody))
+  print("")
